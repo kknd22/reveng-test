@@ -6,4 +6,6 @@ class Book {
 
 	static hasMany = [authors: Author]
 	static belongsTo = [Author]
+	
+	static reportable = [:]
 }

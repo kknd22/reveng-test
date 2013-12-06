@@ -25,6 +25,10 @@ class Compos implements Serializable {
 	}
 
 	static mapping = {
-		id composite: ["firstName", "lastName"]
+		id composite: ['firstName', 'lastName']
+		columns {
+			firstName(column: 'first_Name')
+			lastName(column: 'last_Name')
+		  }
 	}
 }

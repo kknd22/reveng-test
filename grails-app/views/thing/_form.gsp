@@ -18,6 +18,14 @@
 	<g:textField name="name" maxlength="123" value="${thingInstance?.name}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: thingInstance, field: 'newColumn', 'error')} ">
+	<label for="newColumn">
+		<g:message code="thing.newColumn.label" default="New Column" />
+		
+	</label>
+	<g:checkBox name="newColumn" value="${thingInstance?.newColumn}" />
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: thingInstance, field: 'floatValue', 'error')} required">
 	<label for="floatValue">
 		<g:message code="thing.floatValue.label" default="Float Value" />

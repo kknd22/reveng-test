@@ -28,6 +28,8 @@
 					
 						<g:sortableColumn property="name" title="${message(code: 'thing.name.label', default: 'Name')}" />
 					
+						<g:sortableColumn property="newColumn" title="${message(code: 'thing.newColumn.label', default: 'New Column')}" />
+					
 						<g:sortableColumn property="floatValue" title="${message(code: 'thing.floatValue.label', default: 'Float Value')}" />
 					
 					</tr>
@@ -39,6 +41,8 @@
 						<td><g:link action="show" id="${thingInstance.id}">${fieldValue(bean: thingInstance, field: "email")}</g:link></td>
 					
 						<td>${fieldValue(bean: thingInstance, field: "name")}</td>
+					
+						<td><g:formatBoolean boolean="${thingInstance.newColumn}" /></td>
 					
 						<td>${fieldValue(bean: thingInstance, field: "floatValue")}</td>
 					

@@ -11,4 +11,6 @@ class Visit {
 	static mapping = {
 		version false
 	}
+	
+	static reportable = [:]
 }

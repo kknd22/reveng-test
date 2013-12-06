@@ -41,6 +41,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${thingInstance?.newColumn}">
+				<li class="fieldcontain">
+					<span id="newColumn-label" class="property-label"><g:message code="thing.newColumn.label" default="New Column" /></span>
+					
+						<span class="property-value" aria-labelledby="newColumn-label"><g:formatBoolean boolean="${thingInstance?.newColumn}" /></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${thingInstance?.floatValue}">
 				<li class="fieldcontain">
 					<span id="floatValue-label" class="property-label"><g:message code="thing.floatValue.label" default="Float Value" /></span>

@@ -114,6 +114,9 @@ log4j = {
            'net.sf.ehcache.hibernate'
 }
 
+//grails.plugin.reveng.destDir = 'temp_reverse_engineer'
+grails.plugin.reveng.includeTables = ['thing']
+
 grails.plugin.reveng.packageName = 'com.revengtest'
 grails.plugin.reveng.versionColumns = [other: 'nonstandard_version_name']
 grails.plugin.reveng.manyToManyTables = ['user_roles']
